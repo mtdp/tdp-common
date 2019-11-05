@@ -12,13 +12,13 @@ import java.util.List;
  */
 public interface BaseMapper<T,K> {
 	
-	public List<T> gets();
+	public List<T> list();
 	
 	public T get(K id);
 	
-	public int add(T t);
+	public int save(T t);
 	
-	public int del(K id);
+	public int deleteById(K id);
 	
 	public int update(T t);
 
